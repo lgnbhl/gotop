@@ -62,8 +62,7 @@ shinyApp(ui, server)
 
 You can replace the default Font Awesome icon “fas fa-chevron-up” by
 [any other Font Awesome icon](https://fontawesome.com/icons?d=gallery),
-change its color, width and much more (see all arguments of
-`use_gotop()` ).
+change its color, width and much more (see arguments of `use_gotop()` ).
 
 ``` r
 gotop::use_gotop(
