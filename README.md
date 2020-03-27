@@ -58,7 +58,7 @@ server <- function(input, output, session){
 shinyApp(ui, server)
 ```
 
-## Customize your icon
+## Customize it
 
 You can replace the default Font Awesome icon “fas fa-chevron-up” by
 [any other Font Awesome icon](https://fontawesome.com/icons?d=gallery),
