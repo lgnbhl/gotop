@@ -1,0 +1,25 @@
+template:
+  params:
+    bootswatch: cosmo
+    ganalytics: UA-158089797-1
+
+navbar:
+  left:
+  - text: Home
+    href: index.html
+  - text: Reference
+    href: reference/index.html
+  right:
+   - icon: fa-linkedin
+     href: https://www.linkedin.com/in/felixluginbuhl
+   - icon: fa-twitter
+     href: https://twitter.com/FelixLuginbuhl
+   - icon: fa-github
+     href: https://github.com/lgnbhl/gotop
+   - icon: fa-home
+     href: http://felixluginbuhl.com
+
+reference:
+  - title: "Functions"
+    contents: 
+      - use_gotop

@@ -1,0 +1,22 @@
+Package: gotop
+Title: 'goTop' for 'Shiny'
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Felix",
+           family = "Luginbuhl",
+           role = c("aut", "cre"),
+           email = "felix.luginbuhl@protonmail.ch"),
+      person(given = "Scott",
+           family = "Dorman",
+           role = c("aut"),
+           comment = "Author of goTop")
+      )
+Description: 'goTop' for 'Shiny'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: 
+    jsonlite,
+    htmltools,
+    rmarkdown
