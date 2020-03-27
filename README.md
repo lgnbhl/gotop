@@ -17,6 +17,7 @@ Install the package from Github.
 
 ``` r
 remotes::install_github("lgnbhl/gotop")
+
 library(gotop)
 ```
 
@@ -27,7 +28,7 @@ To add a scroll up icon in a R Markdown document, simply add
 
 ``` r
 ```{r, echo = FALSE}
-use_gotop()
+gotop::use_gotop()
 ```
 ```
 
@@ -41,7 +42,7 @@ library(shiny)
 
 ui <- function(){
   fluidPage(
-    use_gotop(), # add it inside the ui
+    gotop::use_gotop(), # add it inside the ui
     h2("Example"), 
     HTML(rep("<br/>", 100)),
     textOutput("bottom")
