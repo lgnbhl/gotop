@@ -2,5 +2,5 @@ image: rocker/verse
 
 test:
    script:
-    - R -e 'install.packages(c("jsonlite"))'
+    - R -e 'install.packages("jsonlite")'
     - R -e 'devtools::check()'

@@ -3,6 +3,8 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/gotop)](https://CRAN.R-project.org/package=gotop)
+[![pipeline
+status](https://gitlab.com/lgnbhl/gotop/badges/master/pipeline.svg)](https://gitlab.com/lgnbhl/gotop/pipelines)
 
 # gotop <img src="man/figures/logo.png" align="right" />
 

@@ -5,3 +5,4 @@
 ^pkgdown
 ^_pkgdown.yml
 ^data-raw
+^.gitlab-ci.yml
