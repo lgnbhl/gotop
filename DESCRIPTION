@@ -1,5 +1,5 @@
 Package: gotop
-Title: Add a scroll back to top icon to RMarkdown documents and Shiny apps
+Title: Add a "scroll back to top" icon to RMarkdown documents and Shiny apps
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Felix",
@@ -20,3 +20,5 @@ Imports:
     jsonlite,
     htmltools,
     rmarkdown
+URL: https://felixluginbuhl.com/gotop, https://github.com/lgnbhl/gotop
+BugReports: https://github.com/lgnbhl/gotop/issues

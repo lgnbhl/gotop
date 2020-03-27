@@ -23,9 +23,11 @@ library(gotop)
 To add a scroll up icon in a R Markdown document, simply add
 `use_gotop()` inside a R code chunk with `{r, echo = FALSE}`.
 
-    ```{r, echo = FALSE}
-    use_gotop()
-    ```
+``` r
+```{r, echo = FALSE}
+use_gotop()
+```
+```
 
 ### Shiny
 
