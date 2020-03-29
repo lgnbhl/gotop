@@ -16,6 +16,7 @@ Add a "scroll back to top" Font Awesome icon to RMarkdown documents and Shiny ap
 Install the package from Github.
 
 ```{r install and load, eval = FALSE}
+# install.packages("remotes")
 remotes::install_github("lgnbhl/gotop")
 
 library(gotop)

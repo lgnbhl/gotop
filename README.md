@@ -16,6 +16,7 @@ Shiny apps using [jquery-gotop](https://scottdorman.blog/jquery-gotop/).
 Install the package from Github.
 
 ``` r
+# install.packages("remotes")
 remotes::install_github("lgnbhl/gotop")
 
 library(gotop)

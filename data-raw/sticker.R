@@ -2,11 +2,16 @@
 library(hexSticker)
 library(magick)
 library(magrittr)
+library(showtext)
+
+font_add_google("Open Sans")
+showtext_auto()
 
 # ref: "https://upload.wikimedia.org/wikipedia/commons/d/df/Chevron_up_font_awesome.svg"
 hexSticker::sticker("man/figures/Chevron_up_font_awesome_blue.svg",
                     package = "goTop",
                     p_color = "#2466B0",
+                    p_family = "Open Sans",
                     p_size = 7.5,
                     p_y = 0.6,
                     spotlight = FALSE,
