@@ -1,8 +1,8 @@
 Package: gotop
-Title: Add a “scroll back to top” icon to RMarkdown documents and Shiny apps
+Title: Add a “scroll back to top” icon to R Markdown documents and Shiny apps
 Version: 0.0.0.9000
 Authors@R: 
-    c(person(given = "Felix",
+    c(person(given = "Félix",
            family = "Luginbuhl",
            role = c("aut", "cre"),
            email = "felix.luginbuhl@protonmail.ch"),
@@ -11,7 +11,7 @@ Authors@R:
            role = c("aut"),
            comment = "Author of goTop")
       )
-Description: Add a “scroll back to top” Font Awesome icon to RMarkdown documents and Shiny apps using jquery-gotop.
+Description: Add a “scroll back to top” Font Awesome icon to R Markdown documents and Shiny apps using jQuery GoTop.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
