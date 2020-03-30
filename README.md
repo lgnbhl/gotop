@@ -52,7 +52,6 @@ ui <- function(){
 }
 
 server <- function(input, output, session){
-
   output$bottom <- renderText({
     print("Bottom of the page.")
   })
