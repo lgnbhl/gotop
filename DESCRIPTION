@@ -1,6 +1,6 @@
 Package: gotop
-Title: Add a “scroll back to top” icon to R Markdown documents and Shiny apps
-Version: 0.0.0.9000
+Title: Add a “scroll to top” icon to R Markdown and Shiny
+Version: 0.1.0
 Authors@R: 
     c(person(given = "Félix",
            family = "Luginbuhl",

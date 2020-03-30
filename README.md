@@ -8,6 +8,8 @@ status](https://gitlab.com/lgnbhl/gotop/badges/master/pipeline.svg)](https://git
 
 # gotop <img src="man/figures/logo.png" align="right" />
 
+> Add a “scroll to top” icon to R Markdown and Shiny
+
 Add a “scroll back to top” Font Awesome icon to R Markdown documents and
 Shiny using [GoTop](https://scottdorman.blog/jquery-gotop/).
 
