@@ -22,7 +22,7 @@ remotes::install_github("lgnbhl/gotop")
 library(gotop)
 ```
 
-### RMarkdown
+### R Markdown
 
 To add a scroll up icon in a R Markdown document, simply add
 `use_gotop()` inside a R code chunk with `{r, echo = FALSE}` so the code
