@@ -20,8 +20,6 @@ Install the package from Github.
 ``` r
 # install.packages("remotes")
 remotes::install_github("lgnbhl/gotop")
-
-library(gotop)
 ```
 
 ### R Markdown
@@ -41,12 +39,12 @@ gotop::use_gotop()
 To use it in Shiny, call `use_gotop()` inside the apps’ UI.
 
 ``` r
-library(scrollup)
 library(shiny)
+library(gotop)
 
 ui <- function(){
   fluidPage(
-    gotop::use_gotop(), # add it inside the ui
+    use_gotop(), # add it inside the ui
     h2("Example"), 
     HTML(rep("<br/>", 100)),
     textOutput("bottom")
