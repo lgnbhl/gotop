@@ -5,11 +5,7 @@ Authors@R:
     c(person(given = "Félix",
            family = "Luginbuhl",
            role = c("aut", "cre"),
-           email = "felix.luginbuhl@protonmail.ch"),
-      person(given = "Scott",
-           family = "Dorman",
-           role = c("aut"),
-           comment = "Author of goTop")
+           email = "felix.luginbuhl@protonmail.ch")
       )
 Description: Add a “scroll back to top” Font Awesome icon to R Markdown documents and Shiny apps using jQuery GoTop.
 License: MIT + file LICENSE
