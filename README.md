@@ -45,15 +45,15 @@ library(gotop)
 ui <- function(){
   fluidPage(
     use_gotop(), # add it inside the ui
-    h2("Example"), 
-    HTML(rep(HTML("<br/>Scroll down<br/><br/>"), 20)),
+    h2("Scroll down"), 
+    HTML(rep("<br/>&darr;<br/><br/>", 20)),
     textOutput("bottom")
   )
 }
 
 server <- function(input, output, session){
   output$bottom <- renderText({
-    print("Bottom of the page.")
+    print("Look right")
   })
 }
 
