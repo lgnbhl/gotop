@@ -46,7 +46,7 @@ ui <- function(){
   fluidPage(
     use_gotop(), # add it inside the ui
     h2("Example"), 
-    HTML(rep("<br/>", 100)),
+    HTML(rep(HTML("<br/>Scroll down<br/><br/>"), 20)),
     textOutput("bottom")
   )
 }
