@@ -14,6 +14,8 @@
 #' @param marginY integer The percentage amount indicating how far away the arrow is from the top or bottom, depending on the value of place.
 #' @param zIndex integer The z-index value.
 #'
+#' @return Javascript code initializing GoTop with dependencies
+#'
 #' @examples
 #' use_gotop()
 #'

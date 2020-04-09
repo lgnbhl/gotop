@@ -47,6 +47,9 @@ use_gotop(
 
 \item{zIndex}{integer The z-index value.}
 }
+\value{
+Javascript code initializing GoTop with dependencies
+}
 \description{
 Add scroll up icon
 }

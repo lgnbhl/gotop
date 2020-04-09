@@ -15,7 +15,14 @@ Shiny using [GoTop](https://scottdorman.blog/jquery-gotop/).
 
 ## Usage
 
-Install the package from Github.
+Install the released version from CRAN.
+
+``` r
+install.packages("gotop")
+```
+
+To get a bug fix, or use a feature from the development version, you can
+install it from GitHub.
 
 ``` r
 # install.packages("remotes")
@@ -42,22 +49,18 @@ To use it in Shiny, call `use_gotop()` inside the apps’ UI.
 library(shiny)
 library(gotop)
 
-ui <- function(){
-  fluidPage(
+shinyApp(
+  ui = fluidPage(
+    align = "center",
     use_gotop(), # add it inside the ui
-    h2("Scroll down"), 
-    HTML(rep("<br/>&darr;<br/><br/>", 20)),
-    textOutput("bottom")
-  )
-}
-
-server <- function(input, output, session){
-  output$bottom <- renderText({
-    print("Look right")
-  })
-}
-
-shinyApp(ui, server)
+    h2("Shiny with gotop"), 
+    HTML(rep("&darr;<br/><br/>scroll down<br/><br/>", 20)),
+    textOutput("lookright")
+  ),
+  server = function(input, output, session){
+    output$lookright <- renderText({ print("Look right") })
+  }
+)
 ```
 
 ## Customize it

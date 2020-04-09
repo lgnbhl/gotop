@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Add a “scroll to top” icon to R Markdown and Shiny • gotop</title>
+<title>Scroll Back to Top Icon in R Markdown and Shiny • gotop</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -16,8 +16,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Add a “scroll to top” icon to R Markdown and Shiny">
-<meta property="og:description" content="Add a “scroll back to top” Font Awesome icon to R Markdown documents and Shiny apps using jQuery GoTop.">
+<script src="pkgdown.js"></script><meta property="og:title" content="Scroll Back to Top Icon in R Markdown and Shiny">
+<meta property="og:description" content="Add a scroll back to top Font Awesome icon in R Markdown documents and Shiny apps using jQuery GoTop.">
 <meta property="og:image" content="/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -107,51 +107,49 @@
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
-<p>Install the package from Github.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lgnbhl/gotop"</span>)</a></code></pre></div>
+<p>Install the released version from CRAN.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"gotop"</span>)</a></code></pre></div>
+<p>To get a bug fix, or use a feature from the development version, you can install it from GitHub.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lgnbhl/gotop"</span>)</a></code></pre></div>
 <div id="r-markdown" class="section level3">
 <h3 class="hasAnchor">
 <a href="#r-markdown" class="anchor"></a>R Markdown</h3>
 <p>To add a scroll up icon in a R Markdown document, simply add <code><a href="reference/use_gotop.html">use_gotop()</a></code> inside a R code chunk with <code>{r, echo = FALSE}</code> so the code will not be shown in the final document.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="st">`</span><span class="dt"></span><span class="st">``</span><span class="dt">{r, echo = FALSE}</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="dt">gotop::use_gotop()</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">`</span><span class="st">``</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="st">`</span><span class="dt"></span><span class="st">``</span><span class="dt">{r, echo = FALSE}</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="dt">gotop::use_gotop()</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">`</span><span class="st">``</span></a></code></pre></div>
 </div>
 <div id="shiny" class="section level3">
 <h3 class="hasAnchor">
 <a href="#shiny" class="anchor"></a>Shiny</h3>
 <p>To use it in Shiny, call <code><a href="reference/use_gotop.html">use_gotop()</a></code> inside the apps’ UI.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(shiny)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(gotop)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">ui &lt;-<span class="st"> </span><span class="cf">function</span>(){</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5">  <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html">fluidPage</a></span>(</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">    <span class="kw"><a href="reference/use_gotop.html">use_gotop</a></span>(), <span class="co"># add it inside the ui</span></a>
-<a class="sourceLine" id="cb3-7" data-line-number="7">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h2</a></span>(<span class="st">"Example"</span>), </a>
-<a class="sourceLine" id="cb3-8" data-line-number="8">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/HTML.html">HTML</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="st">"&lt;br/&gt;"</span>, <span class="dv">100</span>)),</a>
-<a class="sourceLine" id="cb3-9" data-line-number="9">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/textOutput.html">textOutput</a></span>(<span class="st">"bottom"</span>)</a>
-<a class="sourceLine" id="cb3-10" data-line-number="10">  )</a>
-<a class="sourceLine" id="cb3-11" data-line-number="11">}</a>
-<a class="sourceLine" id="cb3-12" data-line-number="12"></a>
-<a class="sourceLine" id="cb3-13" data-line-number="13">server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session){</a>
-<a class="sourceLine" id="cb3-14" data-line-number="14">  output<span class="op">$</span>bottom &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/renderText.html">renderText</a></span>({</a>
-<a class="sourceLine" id="cb3-15" data-line-number="15">    <span class="kw"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="st">"Bottom of the page."</span>)</a>
-<a class="sourceLine" id="cb3-16" data-line-number="16">  })</a>
-<a class="sourceLine" id="cb3-17" data-line-number="17">}</a>
-<a class="sourceLine" id="cb3-18" data-line-number="18"></a>
-<a class="sourceLine" id="cb3-19" data-line-number="19"><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html">shinyApp</a></span>(ui, server)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(shiny)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(gotop)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html">shinyApp</a></span>(</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">  <span class="dt">ui =</span> <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html">fluidPage</a></span>(</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">    <span class="dt">align =</span> <span class="st">"center"</span>,</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">    <span class="kw"><a href="reference/use_gotop.html">use_gotop</a></span>(), <span class="co"># add it inside the ui</span></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h2</a></span>(<span class="st">"Shiny with gotop"</span>), </a>
+<a class="sourceLine" id="cb4-9" data-line-number="9">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/HTML.html">HTML</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="st">"&amp;darr;&lt;br/&gt;&lt;br/&gt;scroll down&lt;br/&gt;&lt;br/&gt;"</span>, <span class="dv">20</span>)),</a>
+<a class="sourceLine" id="cb4-10" data-line-number="10">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/textOutput.html">textOutput</a></span>(<span class="st">"lookright"</span>)</a>
+<a class="sourceLine" id="cb4-11" data-line-number="11">  ),</a>
+<a class="sourceLine" id="cb4-12" data-line-number="12">  <span class="dt">server =</span> <span class="cf">function</span>(input, output, session){</a>
+<a class="sourceLine" id="cb4-13" data-line-number="13">    output<span class="op">$</span>lookright &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/renderText.html">renderText</a></span>({ <span class="kw"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="st">"Look right"</span>) })</a>
+<a class="sourceLine" id="cb4-14" data-line-number="14">  }</a>
+<a class="sourceLine" id="cb4-15" data-line-number="15">)</a></code></pre></div>
 </div>
 </div>
 <div id="customize-it" class="section level2">
 <h2 class="hasAnchor">
 <a href="#customize-it" class="anchor"></a>Customize it</h2>
 <p>You can replace the default Font Awesome icon “fas fa-chevron-up” by <a href="https://fontawesome.com/icons?d=gallery">any other Font Awesome icon</a>, change its color, width and much more (see arguments of <code><a href="reference/use_gotop.html">use_gotop()</a></code> ).</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">gotop<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/gotop/man/use_gotop.html">use_gotop</a></span>(</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="dt">src =</span> <span class="st">"fas fa-chevron-circle-up"</span>, </a>
-<a class="sourceLine" id="cb4-3" data-line-number="3">  <span class="dt">color =</span> <span class="st">"tomato"</span>, </a>
-<a class="sourceLine" id="cb4-4" data-line-number="4">  <span class="dt">width =</span> <span class="dv">30</span></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5">  )</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">gotop<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/gotop/man/use_gotop.html">use_gotop</a></span>(</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">  <span class="dt">src =</span> <span class="st">"fas fa-chevron-circle-up"</span>, </a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">  <span class="dt">color =</span> <span class="st">"tomato"</span>, </a>
+<a class="sourceLine" id="cb5-4" data-line-number="4">  <span class="dt">width =</span> <span class="dv">30</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5">  )</a></code></pre></div>
 </div>
 </div>
 
