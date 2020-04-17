@@ -21,7 +21,6 @@
 #'
 #' @importFrom jsonlite toJSON
 #' @importFrom htmltools HTML tags tagList
-#' @importFrom rmarkdown html_dependency_font_awesome
 #' @export
 
 use_gotop <- function(
@@ -58,8 +57,7 @@ use_gotop <- function(
   options <- jsonlite::toJSON(options, auto_unbox = TRUE)
   
   tagList(
-    html_dependency_gotop(),
-    rmarkdown::html_dependency_font_awesome(),
+    html_dependencies_gotop(),
     htmltools::HTML("<div id='goTop'></div>"),
     htmltools::tags$script(
       sprintf(
@@ -72,15 +70,31 @@ use_gotop <- function(
   )
 }
 
-html_dependency_gotop <- function() {
-  htmltools::htmlDependency(
-    name = "goTop",
-    version = "2.0.0",
-    package = "gotop",
-    src = c(
-      file = "",
-      url = ""
+html_dependencies_gotop <- function() {
+  list(
+    htmltools::htmlDependency(
+      name = "goTop",
+      version = "2.0.0",
+      package = "gotop",
+      src = c(
+        file = "",
+        url = ""
+      ),
+      script = "htmlwidgets/jquery.gotop.js"
     ),
-    script = "htmlwidgets/jquery.gotop.js"
+    # fontawesome-5.1.0 copied from rmarkdown v.2.1.2
+    # https://github.com/rstudio/rmarkdown/tree/master/inst/rmd/h/fontawesome
+    htmltools::htmlDependency(
+      "fontawesome",
+      "5.1.0",
+      package = "gotop",
+      src = c(
+        file = "",
+        url = ""
+      ),
+      stylesheet = c(
+        "htmlwidgets/fontawesome-5.1.0/css/all.css",
+        "htmlwidgets/fontawesome-5.1.0/css/v4-shims.css")
+    )
   )
 }

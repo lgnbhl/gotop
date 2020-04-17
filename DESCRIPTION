@@ -14,7 +14,6 @@ LazyData: true
 RoxygenNote: 7.1.0
 Imports: 
     jsonlite,
-    htmltools,
-    rmarkdown
+    htmltools
 URL: https://felixluginbuhl.com/gotop, https://github.com/lgnbhl/gotop
 BugReports: https://github.com/lgnbhl/gotop/issues
