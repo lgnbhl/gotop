@@ -44,7 +44,7 @@ use_gotop <- function(
     scrolltime = scrolltime,
     src = src,
     width = width,
-    place = place,
+    place = match.arg(arg = place, choices = c("left", "right")),
     color = color,
     fadein = fadein,
     fadeout = fadeout,
