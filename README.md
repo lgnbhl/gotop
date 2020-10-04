@@ -5,6 +5,8 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/gotop)](https://CRAN.R-project.org/package=gotop)
+[![Grand
+total](https://cranlogs.r-pkg.org/badges/grand-total/gotop)](https://cran.r-project.org/package=gotop)
 [![pipeline
 status](https://gitlab.com/lgnbhl/gotop/badges/master/pipeline.svg)](https://gitlab.com/lgnbhl/gotop/pipelines)
 [![R build
