@@ -17,23 +17,27 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -45,7 +49,6 @@
 <meta property="og:title" content="Add scroll up icon — use_gotop" />
 <meta property="og:description" content="Add scroll up icon" />
 <meta property="og:image" content="/logo.png" />
-<meta name="twitter:card" content="summary" />
 
 
 
@@ -73,7 +76,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -87,7 +90,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">gotop</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
       </span>
     </div>
 
@@ -147,76 +150,76 @@
     <p>Add scroll up icon</p>
     </div>
 
-    <pre class="usage"><span class='fu'>use_gotop</span>(
-  <span class='kw'>src</span> <span class='kw'>=</span> <span class='st'>"fas fa-chevron-up"</span>,
-  <span class='kw'>width</span> <span class='kw'>=</span> <span class='fl'>45</span>,
-  <span class='kw'>opacity</span> <span class='kw'>=</span> <span class='fl'>0.5</span>,
-  <span class='kw'>place</span> <span class='kw'>=</span> <span class='st'>"right"</span>,
-  <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>""</span>,
-  <span class='kw'>appear</span> <span class='kw'>=</span> <span class='fl'>200</span>,
-  <span class='kw'>scrolltime</span> <span class='kw'>=</span> <span class='fl'>800</span>,
-  <span class='kw'>fadein</span> <span class='kw'>=</span> <span class='fl'>500</span>,
-  <span class='kw'>fadeout</span> <span class='kw'>=</span> <span class='fl'>500</span>,
-  <span class='kw'>marginX</span> <span class='kw'>=</span> <span class='fl'>2</span>,
-  <span class='kw'>marginY</span> <span class='kw'>=</span> <span class='fl'>2</span>,
-  <span class='kw'>container</span> <span class='kw'>=</span> <span class='st'>""</span>,
-  <span class='kw'>zIndex</span> <span class='kw'>=</span> <span class='fl'>9</span>
-)</pre>
+    <pre class="usage"><span class='fu'>use_gotop</span><span class='op'>(</span>
+  src <span class='op'>=</span> <span class='st'>"fas fa-chevron-up"</span>,
+  width <span class='op'>=</span> <span class='fl'>45</span>,
+  opacity <span class='op'>=</span> <span class='fl'>0.5</span>,
+  place <span class='op'>=</span> <span class='st'>"right"</span>,
+  color <span class='op'>=</span> <span class='st'>""</span>,
+  appear <span class='op'>=</span> <span class='fl'>200</span>,
+  scrolltime <span class='op'>=</span> <span class='fl'>800</span>,
+  fadein <span class='op'>=</span> <span class='fl'>500</span>,
+  fadeout <span class='op'>=</span> <span class='fl'>500</span>,
+  marginX <span class='op'>=</span> <span class='fl'>2</span>,
+  marginY <span class='op'>=</span> <span class='fl'>2</span>,
+  container <span class='op'>=</span> <span class='st'>""</span>,
+  zIndex <span class='op'>=</span> <span class='fl'>9</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>src</th>
-      <td><p>string The CSS classes used to display the arrow.</p></td>
+      <td><p>A string. The CSS classes used to display the gotop icon.</p></td>
     </tr>
     <tr>
       <th>width</th>
-      <td><p>integer The width of the arrow.</p></td>
+      <td><p>An integer. The width of the gotop icon.</p></td>
     </tr>
     <tr>
       <th>opacity</th>
-      <td><p>decimal Sets the transparency level for the arrow, where 1 is not transparent at all, 0.5 is 50 percent see-through and 0 is completely transparent.</p></td>
+      <td><p>decimal Sets the transparency level for the gotop icon, where 1 is not transparent at all, 0.5 is 50 percent see-through and 0 is completely transparent.</p></td>
     </tr>
     <tr>
       <th>place</th>
-      <td><p>string The location where the arrow will be shown. Valid values are “right” or “left”.</p></td>
+      <td><p>A string. The location where the gotop icon will be shown. Valid values are 'right' or 'left'.</p></td>
     </tr>
     <tr>
       <th>color</th>
-      <td><p>string The color of the selected CSS classes icon.</p></td>
+      <td><p>A string. The color of the selected the gotop icon.</p></td>
     </tr>
     <tr>
       <th>appear</th>
-      <td><p>integer The amount of pixels the page must be scrolled down before the arrow is displayed.</p></td>
+      <td><p>An integer. The amount of pixels the page must be scrolled down before the gotop icon is displayed.</p></td>
     </tr>
     <tr>
       <th>scrolltime</th>
-      <td><p>integer A number determining how long the animation will run when scrolling to the top of the page.</p></td>
+      <td><p>An integer. A number determining how long the animation will run when scrolling to the top of the page.</p></td>
     </tr>
     <tr>
       <th>fadein</th>
-      <td><p>integer A number determining how long the animation will run when fading in to opaque.</p></td>
+      <td><p>An integer. A number determining how long the animation will run when fading in to opaque.</p></td>
     </tr>
     <tr>
       <th>fadeout</th>
-      <td><p>integer A number determining how long the animation will run when fading out to transparent.</p></td>
+      <td><p>An integer. A number determining how long the animation will run when fading out to transparent.</p></td>
     </tr>
     <tr>
       <th>marginX</th>
-      <td><p>integer The percentage amount indicating how far away the arrow is from the bottom, left, or right, depending on the value of place.</p></td>
+      <td><p>An integer. The percentage amount indicating how far away the gotop icon is from the bottom, left, or right, depending on the value of place.</p></td>
     </tr>
     <tr>
       <th>marginY</th>
-      <td><p>integer The percentage amount indicating how far away the arrow is from the top or bottom, depending on the value of place.</p></td>
+      <td><p>An integer. The percentage amount indicating how far away the gotop icon is from the top or bottom, depending on the value of place.</p></td>
     </tr>
     <tr>
       <th>container</th>
-      <td><p>string The HTML element to which the scroll function will be attached. If no value is given, then the scroll function will be attched to the window.</p></td>
+      <td><p>A string. The HTML element to which the scroll function will be attached. If no value is given, then the scroll function will be attched to the window.</p></td>
     </tr>
     <tr>
       <th>zIndex</th>
-      <td><p>integer The z-index value.</p></td>
+      <td><p>An integer. The z-index value.</p></td>
     </tr>
     </table>
 
@@ -225,20 +228,17 @@
     <p>Javascript code initializing GoTop with dependencies</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>use_gotop</span>()</div><div class='output co'>#&gt; &lt;div id='goTop'&gt;&lt;/div&gt;
+    <pre class="examples"><div class='input'><span class='fu'>use_gotop</span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; &lt;div id='goTop'&gt;&lt;/div&gt;
 #&gt; &lt;script&gt;$(function () {
 #&gt;           $('#goTop').goTop({"container":"","appear":200,"scrolltime":800,"src":"fas fa-chevron-up","width":45,"place":"right","color":"","fadein":500,"fadeout":500,"opacity":0.5,"marginX":2,"marginY":2,"zIndex":9});
 #&gt;          });&lt;/script&gt;</div><div class='input'>
 </div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      <li><a href="#value">Value</a></li>
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -249,7 +249,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
