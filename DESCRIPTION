@@ -13,4 +13,4 @@ URL: https://felixluginbuhl.com/gotop, https://github.com/lgnbhl/gotop
 BugReports: https://github.com/lgnbhl/gotop/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
