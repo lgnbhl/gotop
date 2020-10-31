@@ -72,6 +72,7 @@ shinyApp(
 
 ## Customize it
 
+<<<<<<< HEAD
 You can replace the default Font Awesome arrow icon (“fas
 fa-chevron-up”) by [any other Font Awesome
 icon](https://fontawesome.com/icons?d=gallery), change its color, width
@@ -80,6 +81,16 @@ and much more (run `?use_gotop()` to see the documentation).
 ``` r
 gotop::use_gotop(
   src = "fas fa-chevron-circle-up", # CSS class from Font Awesome
+=======
+You can replace the default Font Awesome icon “fas fa-chevron-up” by
+[any other Font Awesome icon](https://fontawesome.com/icons?d=gallery),
+change its color, width and much more (run `?use_gotop()` to see the
+documentation).
+
+``` r
+gotop::use_gotop(
+  src = "fas fa-chevron-circle-up", # icon link from Font Awesome
+>>>>>>> 479250797415dd1eab33f7db5a5cf185de2954fb
   color = "tomato", # color
   opacity = 0.8, # transparency
   width = 30, # size
