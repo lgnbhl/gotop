@@ -21,31 +21,31 @@ use_gotop(
 )
 }
 \arguments{
-\item{src}{string The CSS classes used to display the arrow.}
+\item{src}{A string. The CSS classes used to display the gotop icon.}
 
-\item{width}{integer The width of the arrow.}
+\item{width}{An integer. The width of the gotop icon.}
 
-\item{opacity}{decimal Sets the transparency level for the arrow, where 1 is not transparent at all, 0.5 is 50 percent see-through and 0 is completely transparent.}
+\item{opacity}{decimal Sets the transparency level for the gotop icon, where 1 is not transparent at all, 0.5 is 50 percent see-through and 0 is completely transparent.}
 
-\item{place}{string The location where the arrow will be shown. Valid values are “right” or “left”.}
+\item{place}{A string. The location where the gotop icon will be shown. Valid values are 'right' or 'left'.}
 
-\item{color}{string The color of the selected CSS classes icon.}
+\item{color}{A string. The color of the selected the gotop icon.}
 
-\item{appear}{integer The amount of pixels the page must be scrolled down before the arrow is displayed.}
+\item{appear}{An integer. The amount of pixels the page must be scrolled down before the gotop icon is displayed.}
 
-\item{scrolltime}{integer A number determining how long the animation will run when scrolling to the top of the page.}
+\item{scrolltime}{An integer. A number determining how long the animation will run when scrolling to the top of the page.}
 
-\item{fadein}{integer A number determining how long the animation will run when fading in to opaque.}
+\item{fadein}{An integer. A number determining how long the animation will run when fading in to opaque.}
 
-\item{fadeout}{integer A number determining how long the animation will run when fading out to transparent.}
+\item{fadeout}{An integer. A number determining how long the animation will run when fading out to transparent.}
 
-\item{marginX}{integer The percentage amount indicating how far away the arrow is from the bottom, left, or right, depending on the value of place.}
+\item{marginX}{An integer. The percentage amount indicating how far away the gotop icon is from the bottom, left, or right, depending on the value of place.}
 
-\item{marginY}{integer The percentage amount indicating how far away the arrow is from the top or bottom, depending on the value of place.}
+\item{marginY}{An integer. The percentage amount indicating how far away the gotop icon is from the top or bottom, depending on the value of place.}
 
-\item{container}{string The HTML element to which the scroll function will be attached. If no value is given, then the scroll function will be attched to the window.}
+\item{container}{A string. The HTML element to which the scroll function will be attached. If no value is given, then the scroll function will be attched to the window.}
 
-\item{zIndex}{integer The z-index value.}
+\item{zIndex}{An integer. The z-index value.}
 }
 \value{
 Javascript code initializing GoTop with dependencies

@@ -1,18 +1,18 @@
 #' Add scroll up icon
 #'
-#' @param container string The HTML element to which the scroll function will be attached. If no value is given, then the scroll function will be attched to the window.
-#' @param appear integer The amount of pixels the page must be scrolled down before the arrow is displayed.
-#' @param scrolltime integer A number determining how long the animation will run when scrolling to the top of the page.
-#' @param src string The CSS classes used to display the arrow.
-#' @param width integer The width of the arrow.
-#' @param place string The location where the arrow will be shown. Valid values are “right” or “left”.
-#' @param color string The color of the selected CSS classes icon.
-#' @param fadein integer A number determining how long the animation will run when fading in to opaque.
-#' @param fadeout integer A number determining how long the animation will run when fading out to transparent.
-#' @param opacity decimal Sets the transparency level for the arrow, where 1 is not transparent at all, 0.5 is 50 percent see-through and 0 is completely transparent.
-#' @param marginX integer The percentage amount indicating how far away the arrow is from the bottom, left, or right, depending on the value of place.
-#' @param marginY integer The percentage amount indicating how far away the arrow is from the top or bottom, depending on the value of place.
-#' @param zIndex integer The z-index value.
+#' @param container A string. The HTML element to which the scroll function will be attached. If no value is given, then the scroll function will be attched to the window.
+#' @param appear An integer. The amount of pixels the page must be scrolled down before the gotop icon is displayed.
+#' @param scrolltime An integer. A number determining how long the animation will run when scrolling to the top of the page.
+#' @param src A string. The CSS classes used to display the gotop icon.
+#' @param width An integer. The width of the gotop icon.
+#' @param place A string. The location where the gotop icon will be shown. Valid values are 'right' or 'left'.
+#' @param color A string. The color of the selected the gotop icon.
+#' @param fadein An integer. A number determining how long the animation will run when fading in to opaque.
+#' @param fadeout An integer. A number determining how long the animation will run when fading out to transparent.
+#' @param opacity decimal Sets the transparency level for the gotop icon, where 1 is not transparent at all, 0.5 is 50 percent see-through and 0 is completely transparent.
+#' @param marginX An integer. The percentage amount indicating how far away the gotop icon is from the bottom, left, or right, depending on the value of place.
+#' @param marginY An integer. The percentage amount indicating how far away the gotop icon is from the top or bottom, depending on the value of place.
+#' @param zIndex An integer. The z-index value.
 #'
 #' @return Javascript code initializing GoTop with dependencies
 #'
