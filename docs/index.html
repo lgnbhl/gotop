@@ -129,19 +129,19 @@
 <a href="#shiny" class="anchor"></a>Shiny</h3>
 <p>To use it in Shiny, call <code><a href="reference/use_gotop.html">use_gotop()</a></code> inside the apps’ UI.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">shiny</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://shiny.rstudio.com">shiny</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://felixluginbuhl.com/gotop">gotop</a></span><span class="op">)</span>
 
-<span class="fu">shinyApp</span><span class="op">(</span>
-  ui <span class="op">=</span> <span class="fu">fluidPage</span><span class="op">(</span>
+<span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/shinyApp.html">shinyApp</a></span><span class="op">(</span>
+  ui <span class="op">=</span> <span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/fluidPage.html">fluidPage</a></span><span class="op">(</span>
     align <span class="op">=</span> <span class="st">"center"</span>,
     <span class="fu"><a href="reference/use_gotop.html">use_gotop</a></span><span class="op">(</span><span class="op">)</span>, <span class="co"># add it inside the ui</span>
-    <span class="fu">h2</span><span class="op">(</span><span class="st">"Shiny with gotop"</span><span class="op">)</span>, 
-    <span class="fu">HTML</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="st">"&amp;darr;&lt;br/&gt;&lt;br/&gt;scroll down&lt;br/&gt;&lt;br/&gt;"</span>, <span class="fl">20</span><span class="op">)</span><span class="op">)</span>,
-    <span class="fu">textOutput</span><span class="op">(</span><span class="st">"lookright"</span><span class="op">)</span>
+    <span class="fu"><a href="https://rdrr.io/pkg/htmltools/man/builder.html">h2</a></span><span class="op">(</span><span class="st">"Shiny with gotop"</span><span class="op">)</span>, 
+    <span class="fu"><a href="https://rdrr.io/pkg/htmltools/man/HTML.html">HTML</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="st">"&amp;darr;&lt;br/&gt;&lt;br/&gt;scroll down&lt;br/&gt;&lt;br/&gt;"</span>, <span class="fl">20</span><span class="op">)</span><span class="op">)</span>,
+    <span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/textOutput.html">textOutput</a></span><span class="op">(</span><span class="st">"lookright"</span><span class="op">)</span>
   <span class="op">)</span>,
   server <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">input</span>, <span class="va">output</span>, <span class="va">session</span><span class="op">)</span><span class="op">{</span>
-    <span class="va">output</span><span class="op">$</span><span class="va">lookright</span> <span class="op">&lt;-</span> <span class="fu">renderText</span><span class="op">(</span><span class="op">{</span> <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="st">"Look right"</span><span class="op">)</span> <span class="op">}</span><span class="op">)</span>
+    <span class="va">output</span><span class="op">$</span><span class="va">lookright</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/renderText.html">renderText</a></span><span class="op">(</span><span class="op">{</span> <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="st">"Look right"</span><span class="op">)</span> <span class="op">}</span><span class="op">)</span>
   <span class="op">}</span>
 <span class="op">)</span></pre></div>
 </div>
