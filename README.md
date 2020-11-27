@@ -15,8 +15,8 @@ status](https://github.com/lgnbhl/gotop/workflows/R-CMD-check/badge.svg)](https:
 
 # gotop <img src="man/figures/logo.png" align="right" alt="" width="130" />
 
-Add a scroll back to top icon to R Markdown and Shiny using
-[jquery-gotop](https://scottdorman.blog/jquery-gotop/).
+> Add a scroll back to top icon to R Markdown and Shiny using
+> [jquery-gotop](https://scottdorman.blog/jquery-gotop/).
 
 #### [See live demo](https://gotop.felixluginbuhl.com)
 
