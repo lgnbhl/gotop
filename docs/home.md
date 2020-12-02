@@ -4,7 +4,7 @@
 
 # gotop
 
-Adding a scroll back to top [Font Awesome](https://fontawesome.com) icon in Shiny applications and Rmarkdown documents, see the [demo](https://gotop.felixluginbuhl.com) to test it.
+Add a scroll back to top [Font Awesome](https://fontawesome.com) icon in Shiny apps and Rmarkdown documents. See the [demo](https://gotop.felixluginbuhl.com) to test it.
 
 ## Installation
 
