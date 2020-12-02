@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono&display=swap');
+
+:root {
+  --base-font-family: 'Open Sans', sans-serif;
+  --code-font-family:'Ubuntu Mono', monospace;
+  --copycode-background: #f5f7f5;
+  --copycode-color: #6176FB;
+}
