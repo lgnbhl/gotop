@@ -2,7 +2,7 @@
 
 # gotop <small>v 0.1.2</small>
 
-> Scroll back to top icon in Shiny and Rmarkdown
+> Scroll Back to Top Icon in Shiny and Rmarkdown
 
 [Demo](https://gotop.felixluginbuhl.com)
 [Get Started](/get-started)

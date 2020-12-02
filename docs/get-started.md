@@ -1,11 +1,10 @@
 # Get Started
 
-The gotop package can be used in R shiny and Rmarkdown simply by calling `use_gotop()`.
+Add a scroll back to top icon simply by calling `use_gotop()` in Shiny and Rmarkdown.
 
 ### RMarkdown
 
-To add a scroll up icon in a R Markdown document, add `use_gotop()` inside a R code chunk with `{r, echo = FALSE}` so the code
-will not be shown in the final document.
+Add `use_gotop()` inside a R code chunk, with the parameter `{r, echo = FALSE}` to hid the code in the document.
 
 ``` r
 ```{r, echo = FALSE}
@@ -15,7 +14,7 @@ gotop::use_gotop()
 
 ### Shiny
 
-To use it in Shiny, call `use_gotop()` inside the UI.
+Add `use_gotop()` inside the UI to add the icon in Shiny.
 
 ``` r
 library(shiny)

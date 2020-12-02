@@ -1,6 +1,6 @@
 Package: gotop
 Type: Package
-Title: Scroll Back to Top Icon in 'rmarkdown' and 'shiny'
+Title: Scroll Back to Top Icon in Shiny and Rmarkdown
 Version: 0.1.2
 Authors@R: c(person("Félix", "Luginbuhl", role = c("aut", "cre"),
     email = "felix.luginbuhl@protonmail.ch"))
