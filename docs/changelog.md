@@ -1,5 +1,7 @@
 # Changelog
 
-List of changes made to gotop for coming release v 0.1.3.
+List of changes made to gotop.
+
+## v 0.1.3
 
 * improve docs
