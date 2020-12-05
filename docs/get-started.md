@@ -14,7 +14,7 @@ gotop::use_gotop()
 
 ### Shiny
 
-Add `use_gotop()` inside the UI to add the icon in Shiny.
+Call `use_gotop()` inside the UI to add the gotop icon in your Shiny app.
 
 ``` r
 library(shiny)
@@ -47,4 +47,3 @@ gotop::use_gotop(
   appear = 100 # number of pixels before appearance
   )
 ```
-

@@ -1,10 +1,11 @@
+# gotop
+
 [![R build status](https://github.com/lgnbhl/gotop/workflows/R-CMD-check/badge.svg)](https://github.com/lgnbhl/gotop/actions)
 [![CRAN status](https://www.r-pkg.org/badges/version/gotop)](https://CRAN.R-project.org/package=gotop)
 [![Grand total](https://cranlogs.r-pkg.org/badges/grand-total/gotop)](https://cran.r-project.org/package=gotop)
 
-# gotop
 
-Add a scroll back to top [Font Awesome](https://fontawesome.com) icon in Shiny apps and Rmarkdown documents. See the [demo](https://gotop.felixluginbuhl.com) to test it.
+Add a scroll back to top [Font Awesome](https://fontawesome.com) icon in your Shiny apps and Rmarkdown documents. Have a look at the [demo](https://gotop.felixluginbuhl.com) to see it working live.
 
 ## Installation
 
@@ -14,7 +15,7 @@ Install the stable version from [CRAN](https://CRAN.R-project.org/package=gotop)
 install.packages("gotop")
 ```
 
-Install the development version from Github with `remotes` or `devtools`: 
+Install the development version from [Github](https://github.com/lgnbhl/gotop) with `remotes` or `devtools`: 
 
 <!-- tabs:start -->
 
