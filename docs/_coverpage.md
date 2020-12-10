@@ -5,4 +5,4 @@
 > Scroll Back to Top Icon in Shiny and Rmarkdown
 
 [Demo](https://gotop.felixluginbuhl.com)
-[Try it](#gotop)
+[Get started](get-started)
