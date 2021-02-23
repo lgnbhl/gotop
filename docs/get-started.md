@@ -7,9 +7,9 @@ Add a scroll back to top icon simply by calling `use_gotop()` in Shiny and Rmark
 Add `use_gotop()` inside a R code chunk, with the parameter `{r, echo = FALSE}` to hid the code in the document.
 
 ``` r
-```{r, echo = FALSE}
+```{r, echo = FALSE}
 gotop::use_gotop()
-```
+```
 ```
 
 ### Shiny

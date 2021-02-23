@@ -45,9 +45,9 @@ To add a scroll up icon in a R Markdown document, simply add
 will not be shown in the final document.
 
 ``` r
-```{r, echo = FALSE}
+```{r, echo = FALSE}
 gotop::use_gotop()
-```
+```
 ```
 
 ### Shiny
@@ -61,7 +61,7 @@ library(gotop)
 shinyApp(
   ui = fluidPage(
     align = "center",
-    use_gotop(), # add it inside the ui
+    use_gotop(use_cdn = FALSE), # add it inside the ui
     h2("Shiny with gotop"), 
     HTML(rep("&darr;<br/><br/>scroll down<br/><br/>", 20)),
     textOutput("lookright")
