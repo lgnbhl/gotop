@@ -99,15 +99,15 @@ html_dependencies_gotop <- function(use_cdn = TRUE) {
   # https://github.com/rstudio/rmarkdown/tree/master/inst/rmd/h/fontawesome
   if(use_cdn)
     fontawesome_v5_1_0 <- htmltools::htmlDependency(
-      name = "jquery-aniview",
-      version = "1.0.2",
+      name = "fontawesome",
+      version = "5.1.0",
       src = c(href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/"),
       stylesheet = c("all.css", "v4-shims.css")
     )
   else 
     fontawesome_v5_1_0 <- htmltools::htmlDependency(
-      "fontawesome",
-      "5.1.0",
+      name = "fontawesome",
+      version = "5.1.0",
       src = "",
       stylesheet = c("assets/fontawesome/css/all.css", "assets/fontawesome/css/v4-shims.css"),
       package = "gotop"
