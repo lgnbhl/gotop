@@ -7,7 +7,7 @@
 html_dependencies_gotop(use_cdn = TRUE)
 }
 \arguments{
-\item{use_cdn}{use CDN (by default) or use locally stored files.}
+\item{use_cdn}{boolean. TRUE to use a Content Delivery Network (CDN), true by default, or false to use locally stored files.}
 }
 \description{
 Get gotop html dependencies.

@@ -48,7 +48,7 @@ use_gotop(
 
 \item{zIndex}{An integer. The z-index value.}
 
-\item{use_cdn}{use CDN (by default) or use locally stored files.}
+\item{use_cdn}{boolean. TRUE to use a Content Delivery Network (CDN), true by default, or false to use locally stored files.}
 }
 \value{
 Javascript code initializing GoTop with dependencies

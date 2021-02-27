@@ -13,7 +13,7 @@
 #' @param marginX An integer. The percentage amount indicating how far away the gotop icon is from the bottom, left, or right, depending on the value of place.
 #' @param marginY An integer. The percentage amount indicating how far away the gotop icon is from the top or bottom, depending on the value of place.
 #' @param zIndex An integer. The z-index value.
-#' @param use_cdn use CDN (by default) or use locally stored files.
+#' @param use_cdn boolean. TRUE to use a Content Delivery Network (CDN), true by default, or false to use locally stored files.
 #'
 #' @return Javascript code initializing GoTop with dependencies
 #'
@@ -76,7 +76,7 @@ use_gotop <- function(
 #' 
 #' Get gotop html dependencies.
 #' 
-#' @param use_cdn use CDN (by default) or use locally stored files.
+#' @param use_cdn boolean. TRUE to use a Content Delivery Network (CDN), true by default, or false to use locally stored files.
 #' 
 #' @importFrom htmltools tagList htmlDependency
 #' 
