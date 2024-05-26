@@ -7,10 +7,7 @@
 status](https://www.r-pkg.org/badges/version/gotop)](https://CRAN.R-project.org/package=gotop)
 [![Grand
 total](https://cranlogs.r-pkg.org/badges/grand-total/gotop)](https://cran.r-project.org/package=gotop)
-[![pipeline
-status](https://gitlab.com/lgnbhl/gotop/badges/master/pipeline.svg)](https://gitlab.com/lgnbhl/gotop/pipelines)
-[![R build
-status](https://github.com/lgnbhl/gotop/workflows/R-CMD-check/badge.svg)](https://github.com/lgnbhl/gotop/actions)
+[![R-CMD-check](https://github.com/lgnbhl/gotop/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lgnbhl/gotop/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # gotop <img src="man/figures/logo.png" align="right" alt="" width="130" />
