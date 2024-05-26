@@ -2,6 +2,7 @@
 
 * fix broken CDN
 * update fontawesome from version 5.1.0 to 6.5.2
+* update docs
 
 # gotop 0.1.3
 

@@ -13,10 +13,9 @@ total](https://cranlogs.r-pkg.org/badges/grand-total/gotop)](https://cran.r-proj
 
 # gotop <img src="man/figures/logo.png" align="right" alt="" width="130" />
 
-> Add a scroll back to top icon to R Markdown and Shiny using
-> [jquery-gotop](https://scottdorman.blog/jquery-gotop/).
+> Add a scroll back to top in R Markdown and Shiny
 
-#### [See live demo](https://gotop.felixluginbuhl.com)
+[See live demo](https://gotop.felixluginbuhl.com){.btn .btn-primary .btn role="button"}
 
 ## Install
 
@@ -34,9 +33,7 @@ install it from GitHub.
 remotes::install_github("lgnbhl/gotop")
 ```
 
-## How to use
-
-### RMarkdown
+## RMarkdown
 
 To add a scroll up icon in a R Markdown document, simply add
 `use_gotop()` inside a R code chunk with `{r, echo = FALSE}` so the code
@@ -46,8 +43,7 @@ will not be shown in the final document.
 gotop::use_gotop()
  ```
 
-
-### Shiny
+## Shiny
 
 To use it in Shiny, call `use_gotop()` inside the UI.
 
@@ -69,7 +65,7 @@ shinyApp(
 )
 ```
 
-### Customize it
+## Customize it
 
 You can replace the default Font Awesome chevron up icon (“fas
 fa-chevron-up”) by [any other Font Awesome
