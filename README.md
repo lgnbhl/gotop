@@ -8,6 +8,7 @@ status](https://www.r-pkg.org/badges/version/gotop)](https://CRAN.R-project.org/
 [![Grand
 total](https://cranlogs.r-pkg.org/badges/grand-total/gotop)](https://cran.r-project.org/package=gotop)
 [![R-CMD-check](https://github.com/lgnbhl/gotop/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lgnbhl/gotop/actions/workflows/R-CMD-check.yaml)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-E4405F?style=social&logo=linkedin)](https://www.linkedin.com/in/FelixLuginbuhl)
 <!-- badges: end -->
 
 # gotop <img src="man/figures/logo.png" align="right" alt="" width="130" />
