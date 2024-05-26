@@ -1,4 +1,9 @@
-# aniview 0.1.3
+# gotop 0.1.4
+
+* fix broken CDN
+* update fontawesome from version 5.1.0 to 6.5.2
+
+# gotop 0.1.3
 
 * Added a `NEWS.md` file to track changes to the package.
 * create function html_dependencies_gotop().

@@ -86,7 +86,6 @@ use_gotop <- function(
 
 html_dependencies_gotop <- function(use_cdn = TRUE) {
   
-  # animate.css
   jquerygotop <- htmltools::htmlDependency(
     name = "goTop",
     version = "2.0.0",
@@ -95,19 +94,19 @@ html_dependencies_gotop <- function(use_cdn = TRUE) {
     package = "gotop"
   )
   
-  # fontawesome v5.1.0
+  # fontawesome v 6.5.2
   # https://github.com/rstudio/rmarkdown/tree/master/inst/rmd/h/fontawesome
   if(use_cdn)
     fontawesome_v5_1_0 <- htmltools::htmlDependency(
       name = "fontawesome",
-      version = "5.1.0",
-      src = c(href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/"),
+      version = "6.5.2",
+      src = c(href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/"),
       stylesheet = c("all.css", "v4-shims.css")
     )
   else 
     fontawesome_v5_1_0 <- htmltools::htmlDependency(
       name = "fontawesome",
-      version = "5.1.0",
+      version = "6.5.2",
       src = "",
       stylesheet = c("assets/fontawesome/css/all.css", "assets/fontawesome/css/v4-shims.css"),
       package = "gotop"
