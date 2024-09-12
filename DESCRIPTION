@@ -1,6 +1,6 @@
 Package: gotop
 Type: Package
-Title: Scroll Back to Top Icon in Shiny and Rmarkdown
+Title: Scroll Back to Top Icon in Shiny and R Markdown
 Version: 0.1.4
 Authors@R: c(person("Félix", "Luginbuhl", role = c("aut", "cre"),
     email = "felix.luginbuhl@protonmail.ch"))
@@ -9,8 +9,8 @@ Description: Add a scroll back to top 'Font Awesome' icon
     apps thanks to 'jQuery GoTop' <https://scottdorman.blog/jquery-gotop/>.
 License: MIT + file LICENSE
 Imports: jsonlite, htmltools
-URL: https://felixluginbuhl.com/gotop, https://github.com/lgnbhl/gotop
-BugReports: https://github.com/lgnbhl/gotop/issues
+URL: https://felixluginbuhl.com/gotop/, https://github.com/lgnbhl/gotop/
+BugReports: https://github.com/lgnbhl/gotop/issues/
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.1
